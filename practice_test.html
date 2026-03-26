@@ -75,6 +75,9 @@
       This is a sample practice test demonstrating how assessments will be incorporated into Unit 3. The final version will include additional questions aligned with each lesson's learning objectives. Per A02 specifications: all form fields include associated labels, feedback is text-based and does not rely on color alone, error messages are descriptive, and all interactive elements are keyboard accessible. Per UDL 5.1 and 5.2, the final practice test will also accept audio recordings and file uploads as alternative response formats.
       <br><br><strong>WCAG 4.1.1:</strong> Final page code must be validated using the W3C Markup Validation Service before launch to confirm proper element nesting and unique IDs.
     </div>
+    <div class="next-step-callout">
+      Next step: <a href="frame_4000.html">Discussion Forum</a>
+    </div>
     <div class="lesson-nav">
       <a href="frame_2340.html">&larr; Back to Lesson 3.4: Apply Design Themes</a>
       <a href="frame_4000.html">Discussion Forum &rarr;</a>
@@ -84,5 +87,9 @@
   <script>
     function checkAnswers(){var answers={q1:'b',q2:'c',q3:'b'},correct=0,total=3;for(var q in answers){var sel=document.querySelector('input[name="'+q+'"]:checked'),fb=document.getElementById('feedback-'+q);if(sel&&sel.value===answers[q]){correct++;fb.className='feedback-area feedback-correct';fb.innerHTML='<strong>&#10003; Correct!</strong> Well done.';fb.style.display='block';}else if(sel){fb.className='feedback-area feedback-incorrect';fb.innerHTML='<strong>&#10007; Incorrect.</strong> Review the lesson material and try again.';fb.style.display='block';}else{fb.className='feedback-area feedback-incorrect';fb.innerHTML='<strong>&#9888; No answer selected.</strong> Please select an option.';fb.style.display='block';}}var rd=document.getElementById('results'),rt=document.getElementById('results-text');rd.style.display='block';rt.textContent=correct===total?'You answered '+correct+' out of '+total+' correctly. Great work! You may proceed to the next section.':'You answered '+correct+' out of '+total+' correctly. Review the lessons and try again.';rd.scrollIntoView({behavior:'smooth'});}
   </script>
+  <nav class="sticky-nav" aria-label="Lesson navigation">
+    <a href="frame_2340.html">&larr; Apply Design Themes</a>
+    <a href="frame_4000.html">Next: Discussion Forum &rarr;</a>
+  </nav>
 </body>
 </html>
